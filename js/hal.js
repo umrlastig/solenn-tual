@@ -76,7 +76,8 @@ function classement(doc)
   if (doc.docType_s == 'DOUV') return 'DO';
   if (doc.docType_s == 'POSTER') return 'AFF';
   if (doc.docType_s == 'THESE' || doc.docType_s == 'HDR') return 'TH';
-  if (doc.docType_s == 'REPORT' || doc.docType_s == 'OTHER' || doc.docType_s == 'UNDEFINED') return 'AP';
+  if (doc.docType_s == 'REPORT' || doc.docType_s == 'UNDEFINED') return 'AP';
+  if (doc.docType_s == 'UNDEFINED') return 'AP';
   if (doc.docType_s == 'COMM')
   {
     console.log(doc);
